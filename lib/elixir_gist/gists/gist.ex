@@ -21,6 +21,6 @@ defmodule ElixirGist.Gists.Gist do
   def changeset(gist, attrs) do
     gist
     |> cast(attrs, [:name, :markup_text, :description, :user_id])
-    |> validate_required([:name, :markup_text, :description, :user_id])
+    |> validate_required([:name, :user_id])
   end
 end
