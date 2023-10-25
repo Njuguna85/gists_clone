@@ -74,8 +74,10 @@ form input[type="text"]:hover {
 
 .textarea {
   @apply bg-egDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+  border-left: none;
   border-top: none;
 }
+
 
 .textarea:focus {
   @apply focus:outline-none focus:border-white focus:ring-0;
@@ -84,6 +86,15 @@ form input[type="text"]:hover {
 .create_button {
   @apply bg-egPurple border border-white font-brand font-regular text-black text-base;
 }
-.create_button:hover{
-    @apply hover:bg-egPurple-dark text-egDark-light border-egDark-light
+.create_button:hover {
+  @apply hover:bg-egPurple-dark text-egDark-light border-egDark-light;
+}
+.line-numbers {
+  @apply border border-white font-brand font-regular text-xs text-egDark-light bg-egDark-dark h-[300px] w-[54px] text-right overflow-hidden resize-none;
+  border-right: none;
+  border-top: none;
+}
+
+.line-numbers:focus {
+  @apply focus:outline-none focus:border-white focus:ring-0;
 }
